@@ -1,0 +1,1653 @@
+home-app v0.1.0 (/develop/sources/esp32c3-examples/home-app)
+├── bevy v0.6.1
+│   └── bevy_internal v0.6.0
+│       ├── bevy_app feature "default"
+│       │   ├── bevy_app v0.6.0
+│       │   │   ├── bevy_derive feature "default"
+│       │   │   │   └── bevy_derive v0.6.0 (proc-macro)
+│       │   │   │       ├── bevy_macro_utils feature "default"
+│       │   │   │       │   └── bevy_macro_utils v0.6.0
+│       │   │   │       │       ├── cargo-manifest feature "default"
+│       │   │   │       │       │   └── cargo-manifest v0.2.6
+│       │   │   │       │       │       ├── serde feature "default"
+│       │   │   │       │       │       │   ├── serde v1.0.136
+│       │   │   │       │       │       │   └── serde feature "std"
+│       │   │   │       │       │       │       └── serde v1.0.136
+│       │   │   │       │       │       ├── serde_derive feature "default"
+│       │   │   │       │       │       │   └── serde_derive v1.0.136 (proc-macro)
+│       │   │   │       │       │       │       ├── proc-macro2 feature "default"
+│       │   │   │       │       │       │       │   ├── proc-macro2 v1.0.36
+│       │   │   │       │       │       │       │   │   └── unicode-xid feature "default"
+│       │   │   │       │       │       │       │   │       └── unicode-xid v0.2.2
+│       │   │   │       │       │       │       │   └── proc-macro2 feature "proc-macro"
+│       │   │   │       │       │       │       │       └── proc-macro2 v1.0.36 (*)
+│       │   │   │       │       │       │       ├── quote feature "default"
+│       │   │   │       │       │       │       │   ├── quote v1.0.17
+│       │   │   │       │       │       │       │   │   └── proc-macro2 v1.0.36 (*)
+│       │   │   │       │       │       │       │   └── quote feature "proc-macro"
+│       │   │   │       │       │       │       │       ├── quote v1.0.17 (*)
+│       │   │   │       │       │       │       │       └── proc-macro2 feature "proc-macro" (*)
+│       │   │   │       │       │       │       └── syn feature "default"
+│       │   │   │       │       │       │           ├── syn v1.0.90
+│       │   │   │       │       │       │           │   ├── proc-macro2 v1.0.36 (*)
+│       │   │   │       │       │       │           │   ├── quote v1.0.17 (*)
+│       │   │   │       │       │       │           │   └── unicode-xid feature "default" (*)
+│       │   │   │       │       │       │           ├── syn feature "clone-impls"
+│       │   │   │       │       │       │           │   └── syn v1.0.90 (*)
+│       │   │   │       │       │       │           ├── syn feature "derive"
+│       │   │   │       │       │       │           │   └── syn v1.0.90 (*)
+│       │   │   │       │       │       │           ├── syn feature "parsing"
+│       │   │   │       │       │       │           │   └── syn v1.0.90 (*)
+│       │   │   │       │       │       │           ├── syn feature "printing"
+│       │   │   │       │       │       │           │   ├── syn v1.0.90 (*)
+│       │   │   │       │       │       │           │   └── syn feature "quote"
+│       │   │   │       │       │       │           │       └── syn v1.0.90 (*)
+│       │   │   │       │       │       │           └── syn feature "proc-macro"
+│       │   │   │       │       │       │               ├── syn v1.0.90 (*)
+│       │   │   │       │       │       │               ├── proc-macro2 feature "proc-macro" (*)
+│       │   │   │       │       │       │               ├── quote feature "proc-macro" (*)
+│       │   │   │       │       │       │               └── syn feature "quote" (*)
+│       │   │   │       │       │       ├── toml feature "default"
+│       │   │   │       │       │       │   └── toml v0.5.8
+│       │   │   │       │       │       │       ├── serde feature "default" (*)
+│       │   │   │       │       │       │       └── indexmap feature "default"
+│       │   │   │       │       │       │           └── indexmap v1.8.1
+│       │   │   │       │       │       │               └── hashbrown feature "raw"
+│       │   │   │       │       │       │                   └── hashbrown v0.11.2
+│       │   │   │       │       │       │               [build-dependencies]
+│       │   │   │       │       │       │               └── autocfg feature "default"
+│       │   │   │       │       │       │                   └── autocfg v1.1.0
+│       │   │   │       │       │       └── toml feature "preserve_order"
+│       │   │   │       │       │           ├── toml v0.5.8 (*)
+│       │   │   │       │       │           └── toml feature "indexmap"
+│       │   │   │       │       │               └── toml v0.5.8 (*)
+│       │   │   │       │       ├── quote feature "default" (*)
+│       │   │   │       │       └── syn feature "default" (*)
+│       │   │   │       ├── quote feature "default" (*)
+│       │   │   │       └── syn feature "default" (*)
+│       │   │   ├── bevy_ecs feature "default"
+│       │   │   │   ├── bevy_ecs v0.6.1
+│       │   │   │   │   ├── async-channel feature "default"
+│       │   │   │   │   │   └── async-channel v1.6.1
+│       │   │   │   │   │       ├── concurrent-queue feature "default"
+│       │   │   │   │   │       │   └── concurrent-queue v1.2.2
+│       │   │   │   │   │       │       └── cache-padded feature "default"
+│       │   │   │   │   │       │           └── cache-padded v1.2.0
+│       │   │   │   │   │       ├── event-listener feature "default"
+│       │   │   │   │   │       │   └── event-listener v2.5.2
+│       │   │   │   │   │       └── futures-core feature "default"
+│       │   │   │   │   │           ├── futures-core v0.3.21
+│       │   │   │   │   │           └── futures-core feature "std"
+│       │   │   │   │   │               ├── futures-core v0.3.21
+│       │   │   │   │   │               └── futures-core feature "alloc"
+│       │   │   │   │   │                   └── futures-core v0.3.21
+│       │   │   │   │   ├── bevy_ecs_macros feature "default"
+│       │   │   │   │   │   └── bevy_ecs_macros v0.6.0 (proc-macro)
+│       │   │   │   │   │       ├── bevy_macro_utils feature "default" (*)
+│       │   │   │   │   │       ├── proc-macro2 feature "default" (*)
+│       │   │   │   │   │       ├── quote feature "default" (*)
+│       │   │   │   │   │       └── syn feature "default" (*)
+│       │   │   │   │   ├── bevy_reflect feature "default"
+│       │   │   │   │   │   └── bevy_reflect v0.6.0
+│       │   │   │   │   │       ├── bevy_reflect_derive feature "default"
+│       │   │   │   │   │       │   └── bevy_reflect_derive v0.6.0 (proc-macro)
+│       │   │   │   │   │       │       ├── bevy_macro_utils feature "default" (*)
+│       │   │   │   │   │       │       ├── proc-macro2 feature "default" (*)
+│       │   │   │   │   │       │       ├── quote feature "default" (*)
+│       │   │   │   │   │       │       ├── syn feature "default" (*)
+│       │   │   │   │   │       │       ├── uuid feature "default"
+│       │   │   │   │   │       │       │   ├── uuid v0.8.2
+│       │   │   │   │   │       │       │   │   ├── serde v1.0.136
+│       │   │   │   │   │       │       │   │   └── getrandom feature "default"
+│       │   │   │   │   │       │       │   │       └── getrandom v0.2.6
+│       │   │   │   │   │       │       │   │           ├── libc v0.2.121
+│       │   │   │   │   │       │       │   │           └── cfg-if feature "default"
+│       │   │   │   │   │       │       │   │               └── cfg-if v1.0.0
+│       │   │   │   │   │       │       │   └── uuid feature "std"
+│       │   │   │   │   │       │       │       └── uuid v0.8.2 (*)
+│       │   │   │   │   │       │       ├── uuid feature "serde"
+│       │   │   │   │   │       │       │   └── uuid v0.8.2 (*)
+│       │   │   │   │   │       │       └── uuid feature "v4"
+│       │   │   │   │   │       │           ├── uuid v0.8.2 (*)
+│       │   │   │   │   │       │           └── uuid feature "getrandom"
+│       │   │   │   │   │       │               └── uuid v0.8.2 (*)
+│       │   │   │   │   │       ├── bevy_utils feature "default"
+│       │   │   │   │   │       │   └── bevy_utils v0.6.0
+│       │   │   │   │   │       │       ├── bevy_derive feature "default" (*)
+│       │   │   │   │   │       │       ├── uuid feature "default" (*)
+│       │   │   │   │   │       │       ├── uuid feature "serde" (*)
+│       │   │   │   │   │       │       ├── uuid feature "v4" (*)
+│       │   │   │   │   │       │       ├── ahash feature "default"
+│       │   │   │   │   │       │       │   ├── ahash v0.7.6
+│       │   │   │   │   │       │       │   │   ├── getrandom feature "default"
+│       │   │   │   │   │       │       │   │   │   └── getrandom v0.2.6
+│       │   │   │   │   │       │       │   │   │       ├── libc v0.2.121
+│       │   │   │   │   │       │       │   │   │       └── cfg-if feature "default" (*)
+│       │   │   │   │   │       │       │   │   └── once_cell feature "alloc"
+│       │   │   │   │   │       │       │   │       ├── once_cell v1.10.0
+│       │   │   │   │   │       │       │   │       └── once_cell feature "race"
+│       │   │   │   │   │       │       │   │           └── once_cell v1.10.0
+│       │   │   │   │   │       │       │   │   [build-dependencies]
+│       │   │   │   │   │       │       │   │   └── version_check feature "default"
+│       │   │   │   │   │       │       │   │       └── version_check v0.9.4
+│       │   │   │   │   │       │       │   └── ahash feature "std"
+│       │   │   │   │   │       │       │       └── ahash v0.7.6 (*)
+│       │   │   │   │   │       │       ├── instant feature "default"
+│       │   │   │   │   │       │       │   └── instant v0.1.12
+│       │   │   │   │   │       │       │       └── cfg-if feature "default" (*)
+│       │   │   │   │   │       │       ├── instant feature "wasm-bindgen"
+│       │   │   │   │   │       │       │   ├── instant v0.1.12 (*)
+│       │   │   │   │   │       │       │   ├── instant feature "js-sys"
+│       │   │   │   │   │       │       │   │   └── instant v0.1.12 (*)
+│       │   │   │   │   │       │       │   ├── instant feature "wasm-bindgen_rs"
+│       │   │   │   │   │       │       │   │   └── instant v0.1.12 (*)
+│       │   │   │   │   │       │       │   └── instant feature "web-sys"
+│       │   │   │   │   │       │       │       └── instant v0.1.12 (*)
+│       │   │   │   │   │       │       ├── tracing feature "default"
+│       │   │   │   │   │       │       │   ├── tracing v0.1.32
+│       │   │   │   │   │       │       │   │   ├── tracing-core v0.1.24
+│       │   │   │   │   │       │       │   │   │   └── lazy_static feature "default"
+│       │   │   │   │   │       │       │   │   │       └── lazy_static v1.4.0
+│       │   │   │   │   │       │       │   │   ├── cfg-if feature "default" (*)
+│       │   │   │   │   │       │       │   │   ├── pin-project-lite feature "default"
+│       │   │   │   │   │       │       │   │   │   └── pin-project-lite v0.2.8
+│       │   │   │   │   │       │       │   │   └── tracing-attributes feature "default"
+│       │   │   │   │   │       │       │   │       └── tracing-attributes v0.1.20 (proc-macro)
+│       │   │   │   │   │       │       │   │           ├── proc-macro2 feature "default" (*)
+│       │   │   │   │   │       │       │   │           ├── quote feature "default" (*)
+│       │   │   │   │   │       │       │   │           ├── syn feature "clone-impls" (*)
+│       │   │   │   │   │       │       │   │           ├── syn feature "extra-traits"
+│       │   │   │   │   │       │       │   │           │   └── syn v1.0.90 (*)
+│       │   │   │   │   │       │       │   │           ├── syn feature "full"
+│       │   │   │   │   │       │       │   │           │   └── syn v1.0.90 (*)
+│       │   │   │   │   │       │       │   │           ├── syn feature "parsing" (*)
+│       │   │   │   │   │       │       │   │           ├── syn feature "printing" (*)
+│       │   │   │   │   │       │       │   │           ├── syn feature "proc-macro" (*)
+│       │   │   │   │   │       │       │   │           ├── syn feature "visit"
+│       │   │   │   │   │       │       │   │           │   └── syn v1.0.90 (*)
+│       │   │   │   │   │       │       │   │           └── syn feature "visit-mut"
+│       │   │   │   │   │       │       │   │               └── syn v1.0.90 (*)
+│       │   │   │   │   │       │       │   ├── tracing feature "attributes"
+│       │   │   │   │   │       │       │   │   ├── tracing v0.1.32 (*)
+│       │   │   │   │   │       │       │   │   └── tracing feature "tracing-attributes"
+│       │   │   │   │   │       │       │   │       └── tracing v0.1.32 (*)
+│       │   │   │   │   │       │       │   └── tracing feature "std"
+│       │   │   │   │   │       │       │       ├── tracing v0.1.32 (*)
+│       │   │   │   │   │       │       │       └── tracing-core feature "std"
+│       │   │   │   │   │       │       │           ├── tracing-core v0.1.24 (*)
+│       │   │   │   │   │       │       │           └── tracing-core feature "lazy_static"
+│       │   │   │   │   │       │       │               └── tracing-core v0.1.24 (*)
+│       │   │   │   │   │       │       └── tracing feature "release_max_level_info"
+│       │   │   │   │   │       │           └── tracing v0.1.32 (*)
+│       │   │   │   │   │       ├── downcast-rs feature "default"
+│       │   │   │   │   │       │   ├── downcast-rs v1.2.0
+│       │   │   │   │   │       │   └── downcast-rs feature "std"
+│       │   │   │   │   │       │       └── downcast-rs v1.2.0
+│       │   │   │   │   │       ├── erased-serde feature "default"
+│       │   │   │   │   │       │   ├── erased-serde v0.3.20
+│       │   │   │   │   │       │   │   └── serde v1.0.136
+│       │   │   │   │   │       │   │       └── serde_derive feature "default" (*)
+│       │   │   │   │   │       │   └── erased-serde feature "std"
+│       │   │   │   │   │       │       ├── erased-serde v0.3.20 (*)
+│       │   │   │   │   │       │       └── serde feature "std"
+│       │   │   │   │   │       │           └── serde v1.0.136 (*)
+│       │   │   │   │   │       ├── serde feature "default"
+│       │   │   │   │   │       │   ├── serde v1.0.136 (*)
+│       │   │   │   │   │       │   └── serde feature "std" (*)
+│       │   │   │   │   │       ├── glam feature "default"
+│       │   │   │   │   │       │   ├── glam v0.20.3
+│       │   │   │   │   │       │   │   ├── bytemuck v1.9.1
+│       │   │   │   │   │       │   │   │   └── bytemuck_derive feature "default"
+│       │   │   │   │   │       │   │   │       └── bytemuck_derive v1.1.0 (proc-macro)
+│       │   │   │   │   │       │   │   │           ├── proc-macro2 feature "default" (*)
+│       │   │   │   │   │       │   │   │           ├── quote feature "default" (*)
+│       │   │   │   │   │       │   │   │           └── syn feature "default" (*)
+│       │   │   │   │   │       │   │   ├── mint v0.5.9
+│       │   │   │   │   │       │   │   ├── serde feature "default" (*)
+│       │   │   │   │   │       │   │   └── serde feature "derive"
+│       │   │   │   │   │       │   │       ├── serde v1.0.136 (*)
+│       │   │   │   │   │       │   │       └── serde feature "serde_derive"
+│       │   │   │   │   │       │   │           └── serde v1.0.136 (*)
+│       │   │   │   │   │       │   └── glam feature "std"
+│       │   │   │   │   │       │       └── glam v0.20.3 (*)
+│       │   │   │   │   │       ├── glam feature "serde"
+│       │   │   │   │   │       │   └── glam v0.20.3 (*)
+│       │   │   │   │   │       ├── parking_lot feature "default"
+│       │   │   │   │   │       │   └── parking_lot v0.11.2
+│       │   │   │   │   │       │       ├── instant feature "default" (*)
+│       │   │   │   │   │       │       ├── lock_api feature "default"
+│       │   │   │   │   │       │       │   └── lock_api v0.4.7
+│       │   │   │   │   │       │       │       └── scopeguard v1.1.0
+│       │   │   │   │   │       │       │       [build-dependencies]
+│       │   │   │   │   │       │       │       └── autocfg feature "default" (*)
+│       │   │   │   │   │       │       └── parking_lot_core feature "default"
+│       │   │   │   │   │       │           └── parking_lot_core v0.8.5
+│       │   │   │   │   │       │               ├── cfg-if feature "default" (*)
+│       │   │   │   │   │       │               ├── libc feature "default"
+│       │   │   │   │   │       │               │   ├── libc v0.2.121
+│       │   │   │   │   │       │               │   └── libc feature "std"
+│       │   │   │   │   │       │               │       └── libc v0.2.121
+│       │   │   │   │   │       │               ├── instant feature "default" (*)
+│       │   │   │   │   │       │               └── smallvec feature "default"
+│       │   │   │   │   │       │                   └── smallvec v1.8.0
+│       │   │   │   │   │       │                       └── serde v1.0.136 (*)
+│       │   │   │   │   │       ├── smallvec feature "const_generics"
+│       │   │   │   │   │       │   └── smallvec v1.8.0 (*)
+│       │   │   │   │   │       ├── smallvec feature "default" (*)
+│       │   │   │   │   │       ├── smallvec feature "serde"
+│       │   │   │   │   │       │   └── smallvec v1.8.0 (*)
+│       │   │   │   │   │       ├── smallvec feature "union"
+│       │   │   │   │   │       │   └── smallvec v1.8.0 (*)
+│       │   │   │   │   │       └── thiserror feature "default"
+│       │   │   │   │   │           └── thiserror v1.0.30
+│       │   │   │   │   │               └── thiserror-impl feature "default"
+│       │   │   │   │   │                   └── thiserror-impl v1.0.30 (proc-macro)
+│       │   │   │   │   │                       ├── proc-macro2 feature "default" (*)
+│       │   │   │   │   │                       ├── quote feature "default" (*)
+│       │   │   │   │   │                       └── syn feature "default" (*)
+│       │   │   │   │   ├── bevy_utils feature "default" (*)
+│       │   │   │   │   ├── downcast-rs feature "default" (*)
+│       │   │   │   │   ├── serde feature "default" (*)
+│       │   │   │   │   ├── thiserror feature "default" (*)
+│       │   │   │   │   ├── bevy_tasks feature "default"
+│       │   │   │   │   │   └── bevy_tasks v0.6.0
+│       │   │   │   │   │       ├── async-channel feature "default" (*)
+│       │   │   │   │   │       ├── event-listener feature "default" (*)
+│       │   │   │   │   │       ├── async-executor feature "default"
+│       │   │   │   │   │       │   └── async-executor v1.4.1
+│       │   │   │   │   │       │       ├── concurrent-queue feature "default" (*)
+│       │   │   │   │   │       │       ├── once_cell feature "default"
+│       │   │   │   │   │       │       │   ├── once_cell v1.10.0
+│       │   │   │   │   │       │       │   └── once_cell feature "std"
+│       │   │   │   │   │       │       │       ├── once_cell v1.10.0
+│       │   │   │   │   │       │       │       └── once_cell feature "alloc" (*)
+│       │   │   │   │   │       │       ├── async-task feature "default"
+│       │   │   │   │   │       │       │   ├── async-task v4.2.0
+│       │   │   │   │   │       │       │   └── async-task feature "std"
+│       │   │   │   │   │       │       │       └── async-task v4.2.0
+│       │   │   │   │   │       │       ├── fastrand feature "default"
+│       │   │   │   │   │       │       │   └── fastrand v1.7.0
+│       │   │   │   │   │       │       ├── futures-lite feature "default"
+│       │   │   │   │   │       │       │   ├── futures-lite v1.12.0
+│       │   │   │   │   │       │       │   │   ├── futures-core v0.3.21
+│       │   │   │   │   │       │       │   │   ├── pin-project-lite feature "default" (*)
+│       │   │   │   │   │       │       │   │   ├── fastrand feature "default" (*)
+│       │   │   │   │   │       │       │   │   ├── futures-io feature "default"
+│       │   │   │   │   │       │       │   │   │   ├── futures-io v0.3.21
+│       │   │   │   │   │       │       │   │   │   └── futures-io feature "std"
+│       │   │   │   │   │       │       │   │   │       └── futures-io v0.3.21
+│       │   │   │   │   │       │       │   │   ├── memchr feature "default"
+│       │   │   │   │   │       │       │   │   │   ├── memchr v2.4.1
+│       │   │   │   │   │       │       │   │   │   └── memchr feature "std"
+│       │   │   │   │   │       │       │   │   │       └── memchr v2.4.1
+│       │   │   │   │   │       │       │   │   ├── parking feature "default"
+│       │   │   │   │   │       │       │   │   │   └── parking v2.0.0
+│       │   │   │   │   │       │       │   │   └── waker-fn feature "default"
+│       │   │   │   │   │       │       │   │       └── waker-fn v1.1.0
+│       │   │   │   │   │       │       │   └── futures-lite feature "std"
+│       │   │   │   │   │       │       │       ├── futures-lite v1.12.0 (*)
+│       │   │   │   │   │       │       │       ├── futures-lite feature "alloc"
+│       │   │   │   │   │       │       │       │   └── futures-lite v1.12.0 (*)
+│       │   │   │   │   │       │       │       ├── futures-lite feature "fastrand"
+│       │   │   │   │   │       │       │       │   └── futures-lite v1.12.0 (*)
+│       │   │   │   │   │       │       │       ├── futures-lite feature "futures-io"
+│       │   │   │   │   │       │       │       │   └── futures-lite v1.12.0 (*)
+│       │   │   │   │   │       │       │       ├── futures-lite feature "memchr"
+│       │   │   │   │   │       │       │       │   └── futures-lite v1.12.0 (*)
+│       │   │   │   │   │       │       │       ├── futures-lite feature "parking"
+│       │   │   │   │   │       │       │       │   └── futures-lite v1.12.0 (*)
+│       │   │   │   │   │       │       │       └── futures-lite feature "waker-fn"
+│       │   │   │   │   │       │       │           └── futures-lite v1.12.0 (*)
+│       │   │   │   │   │       │       └── slab feature "default"
+│       │   │   │   │   │       │           ├── slab v0.4.6
+│       │   │   │   │   │       │           └── slab feature "std"
+│       │   │   │   │   │       │               └── slab v0.4.6
+│       │   │   │   │   │       ├── futures-lite feature "default" (*)
+│       │   │   │   │   │       └── num_cpus feature "default"
+│       │   │   │   │   │           └── num_cpus v1.13.1
+│       │   │   │   │   │               └── libc feature "default" (*)
+│       │   │   │   │   ├── fixedbitset feature "default"
+│       │   │   │   │   │   ├── fixedbitset v0.4.1
+│       │   │   │   │   │   └── fixedbitset feature "std"
+│       │   │   │   │   │       └── fixedbitset v0.4.1
+│       │   │   │   │   └── fxhash feature "default"
+│       │   │   │   │       └── fxhash v0.2.1
+│       │   │   │   │           └── byteorder feature "default"
+│       │   │   │   │               ├── byteorder v1.4.3
+│       │   │   │   │               └── byteorder feature "std"
+│       │   │   │   │                   └── byteorder v1.4.3
+│       │   │   │   └── bevy_ecs feature "bevy_reflect"
+│       │   │   │       └── bevy_ecs v0.6.1 (*)
+│       │   │   ├── bevy_reflect feature "default" (*)
+│       │   │   └── bevy_utils feature "default" (*)
+│       │   └── bevy_app feature "bevy_reflect"
+│       │       └── bevy_app v0.6.0 (*)
+│       ├── bevy_derive feature "default" (*)
+│       ├── bevy_ecs feature "default" (*)
+│       ├── bevy_reflect feature "bevy"
+│       │   ├── bevy_reflect v0.6.0 (*)
+│       │   ├── bevy_reflect feature "glam"
+│       │   │   └── bevy_reflect v0.6.0 (*)
+│       │   └── bevy_reflect feature "smallvec"
+│       │       └── bevy_reflect v0.6.0 (*)
+│       ├── bevy_reflect feature "default" (*)
+│       ├── bevy_utils feature "default" (*)
+│       ├── bevy_tasks feature "default" (*)
+│       ├── bevy_asset feature "default"
+│       │   └── bevy_asset v0.6.0
+│       │       ├── bevy_app feature "default" (*)
+│       │       ├── bevy_ecs feature "default" (*)
+│       │       ├── bevy_reflect feature "bevy" (*)
+│       │       ├── bevy_reflect feature "default" (*)
+│       │       ├── bevy_utils feature "default" (*)
+│       │       ├── downcast-rs feature "default" (*)
+│       │       ├── serde feature "default" (*)
+│       │       ├── serde feature "derive" (*)
+│       │       ├── parking_lot feature "default" (*)
+│       │       ├── thiserror feature "default" (*)
+│       │       ├── bevy_tasks feature "default" (*)
+│       │       ├── anyhow feature "default"
+│       │       │   ├── anyhow v1.0.56
+│       │       │   └── anyhow feature "std"
+│       │       │       └── anyhow v1.0.56
+│       │       ├── bevy_diagnostic feature "default"
+│       │       │   └── bevy_diagnostic v0.6.0
+│       │       │       ├── bevy_app feature "default" (*)
+│       │       │       ├── bevy_ecs feature "default" (*)
+│       │       │       ├── bevy_utils feature "default" (*)
+│       │       │       ├── bevy_core feature "default"
+│       │       │       │   └── bevy_core v0.6.0
+│       │       │       │       ├── bevy_app feature "bevy_reflect" (*)
+│       │       │       │       ├── bevy_app feature "default" (*)
+│       │       │       │       ├── bevy_derive feature "default" (*)
+│       │       │       │       ├── bevy_ecs feature "bevy_reflect" (*)
+│       │       │       │       ├── bevy_ecs feature "default" (*)
+│       │       │       │       ├── bevy_reflect feature "bevy" (*)
+│       │       │       │       ├── bevy_reflect feature "default" (*)
+│       │       │       │       ├── bevy_utils feature "default" (*)
+│       │       │       │       ├── bytemuck feature "default"
+│       │       │       │       │   └── bytemuck v1.9.1 (*)
+│       │       │       │       ├── bevy_tasks feature "default" (*)
+│       │       │       │       └── bevy_math feature "default"
+│       │       │       │           └── bevy_math v0.6.0
+│       │       │       │               ├── bevy_reflect feature "bevy" (*)
+│       │       │       │               ├── bevy_reflect feature "default" (*)
+│       │       │       │               ├── glam feature "bytemuck"
+│       │       │       │               │   └── glam v0.20.3 (*)
+│       │       │       │               ├── glam feature "default" (*)
+│       │       │       │               └── glam feature "serde" (*)
+│       │       │       └── bevy_log feature "default"
+│       │       │           └── bevy_log v0.6.0
+│       │       │               ├── bevy_app feature "default" (*)
+│       │       │               ├── bevy_utils feature "default" (*)
+│       │       │               ├── tracing-log feature "default"
+│       │       │               │   ├── tracing-log v0.1.2
+│       │       │               │   │   ├── tracing-core feature "default"
+│       │       │               │   │   │   ├── tracing-core v0.1.24 (*)
+│       │       │               │   │   │   └── tracing-core feature "std" (*)
+│       │       │               │   │   ├── lazy_static feature "default" (*)
+│       │       │               │   │   └── log feature "default"
+│       │       │               │   │       └── log v0.4.16
+│       │       │               │   │           └── cfg-if feature "default" (*)
+│       │       │               │   ├── tracing-log feature "log-tracer"
+│       │       │               │   │   └── tracing-log v0.1.2 (*)
+│       │       │               │   ├── tracing-log feature "std"
+│       │       │               │   │   ├── tracing-log v0.1.2 (*)
+│       │       │               │   │   └── log feature "std"
+│       │       │               │   │       └── log v0.4.16 (*)
+│       │       │               │   └── tracing-log feature "trace-logger"
+│       │       │               │       └── tracing-log v0.1.2 (*)
+│       │       │               ├── tracing-subscriber feature "default"
+│       │       │               │   ├── tracing-subscriber v0.3.10
+│       │       │               │   │   ├── tracing v0.1.32 (*)
+│       │       │               │   │   ├── tracing-core feature "default" (*)
+│       │       │               │   │   ├── lazy_static feature "default" (*)
+│       │       │               │   │   ├── smallvec feature "default" (*)
+│       │       │               │   │   ├── tracing-log feature "log-tracer" (*)
+│       │       │               │   │   ├── tracing-log feature "std" (*)
+│       │       │               │   │   ├── ansi_term feature "default"
+│       │       │               │   │   │   └── ansi_term v0.12.1
+│       │       │               │   │   ├── matchers feature "default"
+│       │       │               │   │   │   └── matchers v0.1.0
+│       │       │               │   │   │       └── regex-automata feature "default"
+│       │       │               │   │   │           ├── regex-automata v0.1.10
+│       │       │               │   │   │           │   └── regex-syntax feature "default"
+│       │       │               │   │   │           │       ├── regex-syntax v0.6.25
+│       │       │               │   │   │           │       └── regex-syntax feature "unicode"
+│       │       │               │   │   │           │           ├── regex-syntax v0.6.25
+│       │       │               │   │   │           │           ├── regex-syntax feature "unicode-age"
+│       │       │               │   │   │           │           │   └── regex-syntax v0.6.25
+│       │       │               │   │   │           │           ├── regex-syntax feature "unicode-bool"
+│       │       │               │   │   │           │           │   └── regex-syntax v0.6.25
+│       │       │               │   │   │           │           ├── regex-syntax feature "unicode-case"
+│       │       │               │   │   │           │           │   └── regex-syntax v0.6.25
+│       │       │               │   │   │           │           ├── regex-syntax feature "unicode-gencat"
+│       │       │               │   │   │           │           │   └── regex-syntax v0.6.25
+│       │       │               │   │   │           │           ├── regex-syntax feature "unicode-perl"
+│       │       │               │   │   │           │           │   └── regex-syntax v0.6.25
+│       │       │               │   │   │           │           ├── regex-syntax feature "unicode-script"
+│       │       │               │   │   │           │           │   └── regex-syntax v0.6.25
+│       │       │               │   │   │           │           └── regex-syntax feature "unicode-segment"
+│       │       │               │   │   │           │               └── regex-syntax v0.6.25
+│       │       │               │   │   │           └── regex-automata feature "std"
+│       │       │               │   │   │               ├── regex-automata v0.1.10 (*)
+│       │       │               │   │   │               └── regex-automata feature "regex-syntax"
+│       │       │               │   │   │                   └── regex-automata v0.1.10 (*)
+│       │       │               │   │   ├── regex feature "std"
+│       │       │               │   │   │   └── regex v1.5.5
+│       │       │               │   │   │       ├── regex-syntax v0.6.25
+│       │       │               │   │   │       ├── memchr feature "default" (*)
+│       │       │               │   │   │       └── aho-corasick feature "default"
+│       │       │               │   │   │           ├── aho-corasick v0.7.18
+│       │       │               │   │   │           │   └── memchr v2.4.1
+│       │       │               │   │   │           └── aho-corasick feature "std"
+│       │       │               │   │   │               ├── aho-corasick v0.7.18 (*)
+│       │       │               │   │   │               └── memchr feature "std" (*)
+│       │       │               │   │   ├── sharded-slab feature "default"
+│       │       │               │   │   │   └── sharded-slab v0.1.4
+│       │       │               │   │   │       └── lazy_static feature "default" (*)
+│       │       │               │   │   └── thread_local feature "default"
+│       │       │               │   │       └── thread_local v1.1.4
+│       │       │               │   │           └── once_cell feature "default" (*)
+│       │       │               │   ├── tracing-subscriber feature "ansi"
+│       │       │               │   │   ├── tracing-subscriber v0.3.10 (*)
+│       │       │               │   │   ├── tracing-subscriber feature "ansi_term"
+│       │       │               │   │   │   └── tracing-subscriber v0.3.10 (*)
+│       │       │               │   │   └── tracing-subscriber feature "fmt"
+│       │       │               │   │       ├── tracing-subscriber v0.3.10 (*)
+│       │       │               │   │       ├── tracing-subscriber feature "registry"
+│       │       │               │   │       │   ├── tracing-subscriber v0.3.10 (*)
+│       │       │               │   │       │   ├── tracing-subscriber feature "sharded-slab"
+│       │       │               │   │       │   │   └── tracing-subscriber v0.3.10 (*)
+│       │       │               │   │       │   ├── tracing-subscriber feature "std"
+│       │       │               │   │       │   │   ├── tracing-subscriber v0.3.10 (*)
+│       │       │               │   │       │   │   ├── tracing-core feature "std" (*)
+│       │       │               │   │       │   │   └── tracing-subscriber feature "alloc"
+│       │       │               │   │       │   │       └── tracing-subscriber v0.3.10 (*)
+│       │       │               │   │       │   └── tracing-subscriber feature "thread_local"
+│       │       │               │   │       │       └── tracing-subscriber v0.3.10 (*)
+│       │       │               │   │       └── tracing-subscriber feature "std" (*)
+│       │       │               │   ├── tracing-subscriber feature "fmt" (*)
+│       │       │               │   ├── tracing-subscriber feature "smallvec"
+│       │       │               │   │   └── tracing-subscriber v0.3.10 (*)
+│       │       │               │   ├── tracing-subscriber feature "std" (*)
+│       │       │               │   └── tracing-subscriber feature "tracing-log"
+│       │       │               │       └── tracing-subscriber v0.3.10 (*)
+│       │       │               ├── tracing-subscriber feature "env-filter"
+│       │       │               │   ├── tracing-subscriber v0.3.10 (*)
+│       │       │               │   ├── tracing-subscriber feature "lazy_static"
+│       │       │               │   │   └── tracing-subscriber v0.3.10 (*)
+│       │       │               │   ├── tracing-subscriber feature "matchers"
+│       │       │               │   │   └── tracing-subscriber v0.3.10 (*)
+│       │       │               │   ├── tracing-subscriber feature "regex"
+│       │       │               │   │   └── tracing-subscriber v0.3.10 (*)
+│       │       │               │   ├── tracing-subscriber feature "std" (*)
+│       │       │               │   ├── tracing-subscriber feature "thread_local" (*)
+│       │       │               │   └── tracing-subscriber feature "tracing"
+│       │       │               │       └── tracing-subscriber v0.3.10 (*)
+│       │       │               └── tracing-subscriber feature "registry" (*)
+│       │       ├── bevy_log feature "default" (*)
+│       │       ├── crossbeam-channel feature "default"
+│       │       │   ├── crossbeam-channel v0.5.4
+│       │       │   │   ├── crossbeam-utils v0.8.8
+│       │       │   │   │   ├── cfg-if feature "default" (*)
+│       │       │   │   │   └── lazy_static feature "default" (*)
+│       │       │   │   └── cfg-if feature "default" (*)
+│       │       │   └── crossbeam-channel feature "std"
+│       │       │       ├── crossbeam-channel v0.5.4 (*)
+│       │       │       ├── crossbeam-channel feature "crossbeam-utils"
+│       │       │       │   └── crossbeam-channel v0.5.4 (*)
+│       │       │       └── crossbeam-utils feature "std"
+│       │       │           ├── crossbeam-utils v0.8.8 (*)
+│       │       │           └── crossbeam-utils feature "lazy_static"
+│       │       │               └── crossbeam-utils v0.8.8 (*)
+│       │       └── rand feature "default"
+│       │           ├── rand v0.8.5
+│       │           │   ├── libc v0.2.121
+│       │           │   ├── rand_chacha v0.3.1
+│       │           │   │   ├── ppv-lite86 feature "simd"
+│       │           │   │   │   └── ppv-lite86 v0.2.16
+│       │           │   │   └── rand_core feature "default"
+│       │           │   │       └── rand_core v0.6.3
+│       │           │   │           └── getrandom feature "default" (*)
+│       │           │   └── rand_core feature "default" (*)
+│       │           ├── rand feature "std"
+│       │           │   ├── rand v0.8.5 (*)
+│       │           │   ├── rand feature "alloc"
+│       │           │   │   ├── rand v0.8.5 (*)
+│       │           │   │   └── rand_core feature "alloc"
+│       │           │   │       └── rand_core v0.6.3 (*)
+│       │           │   ├── rand feature "getrandom"
+│       │           │   │   ├── rand v0.8.5 (*)
+│       │           │   │   └── rand_core feature "getrandom"
+│       │           │   │       └── rand_core v0.6.3 (*)
+│       │           │   ├── rand feature "libc"
+│       │           │   │   └── rand v0.8.5 (*)
+│       │           │   ├── rand feature "rand_chacha"
+│       │           │   │   └── rand v0.8.5 (*)
+│       │           │   ├── rand_chacha feature "std"
+│       │           │   │   ├── rand_chacha v0.3.1 (*)
+│       │           │   │   └── ppv-lite86 feature "std"
+│       │           │   │       └── ppv-lite86 v0.2.16
+│       │           │   └── rand_core feature "std"
+│       │           │       ├── rand_core v0.6.3 (*)
+│       │           │       ├── getrandom feature "std"
+│       │           │       │   └── getrandom v0.2.6 (*)
+│       │           │       ├── rand_core feature "alloc" (*)
+│       │           │       └── rand_core feature "getrandom" (*)
+│       │           └── rand feature "std_rng"
+│       │               ├── rand v0.8.5 (*)
+│       │               └── rand feature "rand_chacha" (*)
+│       ├── bevy_diagnostic feature "default" (*)
+│       ├── bevy_core feature "default" (*)
+│       ├── bevy_math feature "default" (*)
+│       ├── bevy_log feature "default" (*)
+│       ├── bevy_core_pipeline feature "default"
+│       │   └── bevy_core_pipeline v0.6.0
+│       │       ├── bevy_app feature "default" (*)
+│       │       ├── bevy_ecs feature "default" (*)
+│       │       ├── bevy_asset feature "default" (*)
+│       │       ├── bevy_core feature "default" (*)
+│       │       └── bevy_render feature "default"
+│       │           └── bevy_render v0.6.1
+│       │               ├── image v0.23.14
+│       │               │   ├── num-rational v0.3.2
+│       │               │   │   ├── num-integer feature "i128"
+│       │               │   │   │   ├── num-integer v0.1.44
+│       │               │   │   │   │   └── num-traits v0.2.14
+│       │               │   │   │   │       [build-dependencies]
+│       │               │   │   │   │       └── autocfg feature "default" (*)
+│       │               │   │   │   │   [build-dependencies]
+│       │               │   │   │   │   └── autocfg feature "default" (*)
+│       │               │   │   │   └── num-traits feature "i128"
+│       │               │   │   │       └── num-traits v0.2.14 (*)
+│       │               │   │   └── num-traits feature "i128" (*)
+│       │               │   │   [build-dependencies]
+│       │               │   │   └── autocfg feature "default" (*)
+│       │               │   ├── bytemuck feature "default" (*)
+│       │               │   ├── byteorder feature "default" (*)
+│       │               │   ├── color_quant feature "default"
+│       │               │   │   └── color_quant v1.1.0
+│       │               │   ├── num-iter feature "default"
+│       │               │   │   ├── num-iter v0.1.42
+│       │               │   │   │   ├── num-integer v0.1.44 (*)
+│       │               │   │   │   └── num-traits v0.2.14 (*)
+│       │               │   │   │   [build-dependencies]
+│       │               │   │   │   └── autocfg feature "default" (*)
+│       │               │   │   └── num-iter feature "std"
+│       │               │   │       ├── num-iter v0.1.42 (*)
+│       │               │   │       ├── num-integer feature "std"
+│       │               │   │       │   ├── num-integer v0.1.44 (*)
+│       │               │   │       │   └── num-traits feature "std"
+│       │               │   │       │       └── num-traits v0.2.14 (*)
+│       │               │   │       └── num-traits feature "std" (*)
+│       │               │   └── num-traits feature "default"
+│       │               │       ├── num-traits v0.2.14 (*)
+│       │               │       └── num-traits feature "std" (*)
+│       │               ├── bevy_app feature "default" (*)
+│       │               ├── bevy_derive feature "default" (*)
+│       │               ├── bevy_ecs feature "default" (*)
+│       │               ├── bevy_reflect feature "bevy" (*)
+│       │               ├── bevy_reflect feature "default" (*)
+│       │               ├── bevy_utils feature "default" (*)
+│       │               ├── once_cell feature "default" (*)
+│       │               ├── downcast-rs feature "default" (*)
+│       │               ├── serde feature "default" (*)
+│       │               ├── serde feature "derive" (*)
+│       │               ├── parking_lot feature "default" (*)
+│       │               ├── smallvec feature "const_generics" (*)
+│       │               ├── smallvec feature "default" (*)
+│       │               ├── smallvec feature "union" (*)
+│       │               ├── thiserror feature "default" (*)
+│       │               ├── futures-lite feature "default" (*)
+│       │               ├── bevy_asset feature "default" (*)
+│       │               ├── anyhow feature "default" (*)
+│       │               ├── bevy_core feature "default" (*)
+│       │               ├── bevy_math feature "default" (*)
+│       │               ├── regex feature "default"
+│       │               │   ├── regex v1.5.5 (*)
+│       │               │   ├── regex-syntax feature "default" (*)
+│       │               │   ├── regex feature "perf"
+│       │               │   │   ├── regex v1.5.5 (*)
+│       │               │   │   ├── regex feature "perf-cache"
+│       │               │   │   │   └── regex v1.5.5 (*)
+│       │               │   │   ├── regex feature "perf-dfa"
+│       │               │   │   │   └── regex v1.5.5 (*)
+│       │               │   │   ├── regex feature "perf-inline"
+│       │               │   │   │   └── regex v1.5.5 (*)
+│       │               │   │   └── regex feature "perf-literal"
+│       │               │   │       ├── regex v1.5.5 (*)
+│       │               │   │       ├── regex feature "aho-corasick"
+│       │               │   │       │   └── regex v1.5.5 (*)
+│       │               │   │       └── regex feature "memchr"
+│       │               │   │           └── regex v1.5.5 (*)
+│       │               │   ├── regex feature "std" (*)
+│       │               │   └── regex feature "unicode"
+│       │               │       ├── regex v1.5.5 (*)
+│       │               │       ├── regex-syntax feature "unicode" (*)
+│       │               │       ├── regex feature "unicode-age"
+│       │               │       │   ├── regex v1.5.5 (*)
+│       │               │       │   └── regex-syntax feature "unicode-age" (*)
+│       │               │       ├── regex feature "unicode-bool"
+│       │               │       │   ├── regex v1.5.5 (*)
+│       │               │       │   └── regex-syntax feature "unicode-bool" (*)
+│       │               │       ├── regex feature "unicode-case"
+│       │               │       │   ├── regex v1.5.5 (*)
+│       │               │       │   └── regex-syntax feature "unicode-case" (*)
+│       │               │       ├── regex feature "unicode-gencat"
+│       │               │       │   ├── regex v1.5.5 (*)
+│       │               │       │   └── regex-syntax feature "unicode-gencat" (*)
+│       │               │       ├── regex feature "unicode-perl"
+│       │               │       │   ├── regex v1.5.5 (*)
+│       │               │       │   └── regex-syntax feature "unicode-perl" (*)
+│       │               │       ├── regex feature "unicode-script"
+│       │               │       │   ├── regex v1.5.5 (*)
+│       │               │       │   └── regex-syntax feature "unicode-script" (*)
+│       │               │       └── regex feature "unicode-segment"
+│       │               │           ├── regex v1.5.5 (*)
+│       │               │           └── regex-syntax feature "unicode-segment" (*)
+│       │               ├── bevy_crevice feature "default"
+│       │               │   ├── bevy_crevice v0.6.1
+│       │               │   │   ├── glam feature "default" (*)
+│       │               │   │   ├── glam feature "mint"
+│       │               │   │   │   └── glam v0.20.3 (*)
+│       │               │   │   ├── bytemuck feature "default" (*)
+│       │               │   │   ├── mint feature "default"
+│       │               │   │   │   └── mint v0.5.9
+│       │               │   │   └── bevy-crevice-derive feature "default"
+│       │               │   │       └── bevy-crevice-derive v0.6.0 (proc-macro)
+│       │               │   │           ├── bevy_macro_utils feature "default" (*)
+│       │               │   │           ├── proc-macro2 feature "default" (*)
+│       │               │   │           ├── quote feature "default" (*)
+│       │               │   │           └── syn feature "default" (*)
+│       │               │   └── bevy_crevice feature "std"
+│       │               │       └── bevy_crevice v0.6.1 (*)
+│       │               ├── bevy_crevice feature "glam"
+│       │               │   └── bevy_crevice v0.6.1 (*)
+│       │               ├── bevy_transform feature "default"
+│       │               │   └── bevy_transform v0.6.0
+│       │               │       ├── bevy_app feature "default" (*)
+│       │               │       ├── bevy_ecs feature "bevy_reflect" (*)
+│       │               │       ├── bevy_ecs feature "default" (*)
+│       │               │       ├── bevy_reflect feature "bevy" (*)
+│       │               │       ├── bevy_reflect feature "default" (*)
+│       │               │       ├── bevy_utils feature "default" (*)
+│       │               │       ├── smallvec feature "const_generics" (*)
+│       │               │       ├── smallvec feature "default" (*)
+│       │               │       ├── smallvec feature "serde" (*)
+│       │               │       ├── smallvec feature "union" (*)
+│       │               │       └── bevy_math feature "default" (*)
+│       │               ├── bevy_window feature "default"
+│       │               │   └── bevy_window v0.6.0
+│       │               │       ├── bevy_app feature "default" (*)
+│       │               │       ├── bevy_utils feature "default" (*)
+│       │               │       ├── bevy_math feature "default" (*)
+│       │               │       └── raw-window-handle feature "default"
+│       │               │           └── raw-window-handle v0.4.3
+│       │               │               └── cty feature "default"
+│       │               │                   └── cty v0.2.2
+│       │               ├── bitflags feature "default"
+│       │               │   └── bitflags v1.3.2
+│       │               ├── codespan-reporting feature "default"
+│       │               │   └── codespan-reporting v0.11.1
+│       │               │       ├── termcolor feature "default"
+│       │               │       │   └── termcolor v1.1.3
+│       │               │       └── unicode-width feature "default"
+│       │               │           └── unicode-width v0.1.9
+│       │               ├── copyless feature "default"
+│       │               │   └── copyless v0.1.5
+│       │               ├── hex feature "default"
+│       │               │   ├── hex v0.4.3
+│       │               │   └── hex feature "std"
+│       │               │       ├── hex v0.4.3
+│       │               │       └── hex feature "alloc"
+│       │               │           └── hex v0.4.3
+│       │               ├── hexasphere feature "default"
+│       │               │   └── hexasphere v6.1.0
+│       │               │       ├── lazy_static feature "default" (*)
+│       │               │       └── glam feature "default" (*)
+│       │               ├── naga feature "default"
+│       │               │   └── naga v0.8.5
+│       │               │       ├── indexmap feature "default" (*)
+│       │               │       ├── thiserror feature "default" (*)
+│       │               │       ├── log feature "default" (*)
+│       │               │       ├── bitflags feature "default" (*)
+│       │               │       ├── codespan-reporting feature "default" (*)
+│       │               │       ├── num-traits feature "default" (*)
+│       │               │       ├── bit-set feature "default"
+│       │               │       │   ├── bit-set v0.5.2
+│       │               │       │   │   └── bit-vec v0.6.3
+│       │               │       │   └── bit-set feature "std"
+│       │               │       │       ├── bit-set v0.5.2 (*)
+│       │               │       │       └── bit-vec feature "std"
+│       │               │       │           └── bit-vec v0.6.3
+│       │               │       ├── hexf-parse feature "default"
+│       │               │       │   └── hexf-parse v0.2.1
+│       │               │       ├── petgraph feature "default"
+│       │               │       │   ├── petgraph v0.6.0
+│       │               │       │   │   ├── fixedbitset v0.4.1
+│       │               │       │   │   └── indexmap feature "default" (*)
+│       │               │       │   ├── petgraph feature "graphmap"
+│       │               │       │   │   └── petgraph v0.6.0 (*)
+│       │               │       │   ├── petgraph feature "matrix_graph"
+│       │               │       │   │   └── petgraph v0.6.0 (*)
+│       │               │       │   └── petgraph feature "stable_graph"
+│       │               │       │       └── petgraph v0.6.0 (*)
+│       │               │       ├── pp-rs feature "default"
+│       │               │       │   └── pp-rs v0.2.1
+│       │               │       │       └── unicode-xid feature "default" (*)
+│       │               │       ├── rustc-hash feature "default"
+│       │               │       │   ├── rustc-hash v1.1.0
+│       │               │       │   └── rustc-hash feature "std"
+│       │               │       │       └── rustc-hash v1.1.0
+│       │               │       └── spirv feature "default"
+│       │               │           └── spirv v0.2.0+1.5.4
+│       │               │               ├── num-traits v0.2.14 (*)
+│       │               │               └── bitflags feature "default" (*)
+│       │               ├── naga feature "glsl-in"
+│       │               │   ├── naga v0.8.5 (*)
+│       │               │   └── naga feature "pp-rs"
+│       │               │       └── naga v0.8.5 (*)
+│       │               ├── naga feature "spv-in"
+│       │               │   ├── naga v0.8.5 (*)
+│       │               │   ├── naga feature "petgraph"
+│       │               │   │   └── naga v0.8.5 (*)
+│       │               │   └── naga feature "spirv"
+│       │               │       └── naga v0.8.5 (*)
+│       │               ├── naga feature "spv-out"
+│       │               │   ├── naga v0.8.5 (*)
+│       │               │   └── naga feature "spirv" (*)
+│       │               ├── naga feature "wgsl-in"
+│       │               │   ├── naga v0.8.5 (*)
+│       │               │   ├── naga feature "codespan-reporting"
+│       │               │   │   └── naga v0.8.5 (*)
+│       │               │   └── naga feature "hexf-parse"
+│       │               │       └── naga v0.8.5 (*)
+│       │               ├── naga feature "wgsl-out"
+│       │               │   └── naga v0.8.5 (*)
+│       │               ├── wgpu feature "default"
+│       │               │   └── wgpu v0.12.0
+│       │               │       ├── parking_lot feature "default" (*)
+│       │               │       ├── smallvec feature "default" (*)
+│       │               │       ├── log feature "default" (*)
+│       │               │       ├── raw-window-handle feature "default" (*)
+│       │               │       ├── naga feature "default" (*)
+│       │               │       ├── arrayvec feature "default"
+│       │               │       │   ├── arrayvec v0.7.2
+│       │               │       │   └── arrayvec feature "std"
+│       │               │       │       └── arrayvec v0.7.2
+│       │               │       ├── wgpu-core feature "default"
+│       │               │       │   └── wgpu-core v0.12.2
+│       │               │       │       ├── profiling v1.0.5
+│       │               │       │       ├── parking_lot feature "default" (*)
+│       │               │       │       ├── smallvec feature "default" (*)
+│       │               │       │       ├── thiserror feature "default" (*)
+│       │               │       │       ├── fxhash feature "default" (*)
+│       │               │       │       ├── log feature "default" (*)
+│       │               │       │       ├── raw-window-handle feature "default" (*)
+│       │               │       │       ├── bitflags feature "default" (*)
+│       │               │       │       ├── codespan-reporting feature "default" (*)
+│       │               │       │       ├── copyless feature "default" (*)
+│       │               │       │       ├── naga feature "default" (*)
+│       │               │       │       ├── naga feature "span"
+│       │               │       │       │   ├── naga v0.8.5 (*)
+│       │               │       │       │   └── naga feature "codespan-reporting" (*)
+│       │               │       │       ├── naga feature "validate"
+│       │               │       │       │   └── naga v0.8.5 (*)
+│       │               │       │       ├── naga feature "wgsl-in" (*)
+│       │               │       │       ├── arrayvec feature "default" (*)
+│       │               │       │       ├── wgpu-hal feature "default"
+│       │               │       │       │   └── wgpu-hal v0.12.4
+│       │               │       │       │       ├── profiling v1.0.5
+│       │               │       │       │       ├── parking_lot feature "default" (*)
+│       │               │       │       │       ├── thiserror feature "default" (*)
+│       │               │       │       │       ├── fxhash feature "default" (*)
+│       │               │       │       │       ├── log feature "default" (*)
+│       │               │       │       │       ├── raw-window-handle feature "default" (*)
+│       │               │       │       │       ├── bitflags feature "default" (*)
+│       │               │       │       │       ├── naga feature "default" (*)
+│       │               │       │       │       ├── arrayvec feature "default" (*)
+│       │               │       │       │       ├── ash feature "debug"
+│       │               │       │       │       │   └── ash v0.34.0+1.2.203
+│       │               │       │       │       │       └── libloading feature "default"
+│       │               │       │       │       │           └── libloading v0.7.3
+│       │               │       │       │       │               └── cfg-if feature "default" (*)
+│       │               │       │       │       ├── ash feature "loaded"
+│       │               │       │       │       │   ├── ash v0.34.0+1.2.203 (*)
+│       │               │       │       │       │   └── ash feature "libloading"
+│       │               │       │       │       │       └── ash v0.34.0+1.2.203 (*)
+│       │               │       │       │       ├── libloading feature "default" (*)
+│       │               │       │       │       ├── glow feature "default"
+│       │               │       │       │       │   └── glow v0.11.2
+│       │               │       │       │       ├── gpu-alloc feature "default"
+│       │               │       │       │       │   ├── gpu-alloc v0.5.3
+│       │               │       │       │       │   │   ├── bitflags v1.3.2
+│       │               │       │       │       │   │   └── gpu-alloc-types feature "default"
+│       │               │       │       │       │   │       └── gpu-alloc-types v0.2.0
+│       │               │       │       │       │   │           └── bitflags v1.3.2
+│       │               │       │       │       │   └── gpu-alloc feature "std"
+│       │               │       │       │       │       └── gpu-alloc v0.5.3 (*)
+│       │               │       │       │       ├── gpu-descriptor feature "default"
+│       │               │       │       │       │   ├── gpu-descriptor v0.2.2
+│       │               │       │       │       │   │   ├── bitflags v1.3.2
+│       │               │       │       │       │   │   ├── gpu-descriptor-types feature "default"
+│       │               │       │       │       │   │   │   └── gpu-descriptor-types v0.1.1
+│       │               │       │       │       │   │   │       └── bitflags v1.3.2
+│       │               │       │       │       │   │   └── hashbrown feature "default"
+│       │               │       │       │       │   │       ├── hashbrown v0.11.2
+│       │               │       │       │       │   │       │   └── ahash v0.7.6 (*)
+│       │               │       │       │       │   │       ├── hashbrown feature "ahash"
+│       │               │       │       │       │   │       │   └── hashbrown v0.11.2 (*)
+│       │               │       │       │       │   │       └── hashbrown feature "inline-more"
+│       │               │       │       │       │   │           └── hashbrown v0.11.2 (*)
+│       │               │       │       │       │   └── gpu-descriptor feature "std"
+│       │               │       │       │       │       └── gpu-descriptor v0.2.2 (*)
+│       │               │       │       │       ├── inplace_it feature "default"
+│       │               │       │       │       │   └── inplace_it v0.3.3
+│       │               │       │       │       ├── khronos-egl feature "default"
+│       │               │       │       │       │   ├── khronos-egl v4.1.0
+│       │               │       │       │       │   │   ├── libc feature "default" (*)
+│       │               │       │       │       │   │   └── libloading feature "default" (*)
+│       │               │       │       │       │   └── khronos-egl feature "1_5"
+│       │               │       │       │       │       ├── khronos-egl v4.1.0 (*)
+│       │               │       │       │       │       └── khronos-egl feature "1_4"
+│       │               │       │       │       │           ├── khronos-egl v4.1.0 (*)
+│       │               │       │       │       │           └── khronos-egl feature "1_3"
+│       │               │       │       │       │               ├── khronos-egl v4.1.0 (*)
+│       │               │       │       │       │               └── khronos-egl feature "1_2"
+│       │               │       │       │       │                   ├── khronos-egl v4.1.0 (*)
+│       │               │       │       │       │                   └── khronos-egl feature "1_1"
+│       │               │       │       │       │                       ├── khronos-egl v4.1.0 (*)
+│       │               │       │       │       │                       └── khronos-egl feature "1_0"
+│       │               │       │       │       │                           └── khronos-egl v4.1.0 (*)
+│       │               │       │       │       ├── khronos-egl feature "dynamic"
+│       │               │       │       │       │   ├── khronos-egl v4.1.0 (*)
+│       │               │       │       │       │   └── khronos-egl feature "libloading"
+│       │               │       │       │       │       └── khronos-egl v4.1.0 (*)
+│       │               │       │       │       ├── renderdoc-sys feature "default"
+│       │               │       │       │       │   └── renderdoc-sys v0.7.1
+│       │               │       │       │       └── wgpu-types feature "default"
+│       │               │       │       │           └── wgpu-types v0.12.0
+│       │               │       │       │               └── bitflags feature "default" (*)
+│       │               │       │       ├── wgpu-hal feature "gles"
+│       │               │       │       │   ├── wgpu-hal v0.12.4 (*)
+│       │               │       │       │   ├── naga feature "glsl-out"
+│       │               │       │       │   │   └── naga v0.8.5 (*)
+│       │               │       │       │   ├── wgpu-hal feature "egl"
+│       │               │       │       │   │   └── wgpu-hal v0.12.4 (*)
+│       │               │       │       │   ├── wgpu-hal feature "glow"
+│       │               │       │       │   │   └── wgpu-hal v0.12.4 (*)
+│       │               │       │       │   └── wgpu-hal feature "libloading"
+│       │               │       │       │       └── wgpu-hal v0.12.4 (*)
+│       │               │       │       ├── wgpu-hal feature "renderdoc"
+│       │               │       │       │   ├── wgpu-hal v0.12.4 (*)
+│       │               │       │       │   ├── wgpu-hal feature "libloading" (*)
+│       │               │       │       │   └── wgpu-hal feature "renderdoc-sys"
+│       │               │       │       │       └── wgpu-hal v0.12.4 (*)
+│       │               │       │       ├── wgpu-hal feature "vulkan"
+│       │               │       │       │   ├── wgpu-hal v0.12.4 (*)
+│       │               │       │       │   ├── naga feature "spv-out" (*)
+│       │               │       │       │   ├── wgpu-hal feature "ash"
+│       │               │       │       │   │   └── wgpu-hal v0.12.4 (*)
+│       │               │       │       │   ├── wgpu-hal feature "gpu-alloc"
+│       │               │       │       │   │   └── wgpu-hal v0.12.4 (*)
+│       │               │       │       │   ├── wgpu-hal feature "gpu-descriptor"
+│       │               │       │       │   │   └── wgpu-hal v0.12.4 (*)
+│       │               │       │       │   ├── wgpu-hal feature "inplace_it"
+│       │               │       │       │   │   └── wgpu-hal v0.12.4 (*)
+│       │               │       │       │   └── wgpu-hal feature "libloading" (*)
+│       │               │       │       └── wgpu-types feature "default" (*)
+│       │               │       │       [build-dependencies]
+│       │               │       │       └── cfg_aliases feature "default"
+│       │               │       │           └── cfg_aliases v0.1.1
+│       │               │       ├── wgpu-core feature "raw-window-handle"
+│       │               │       │   └── wgpu-core v0.12.2 (*)
+│       │               │       ├── wgpu-hal feature "default" (*)
+│       │               │       └── wgpu-types feature "default" (*)
+│       │               └── wgpu feature "spirv"
+│       │                   ├── wgpu v0.12.0 (*)
+│       │                   ├── naga feature "spv-in" (*)
+│       │                   └── wgpu feature "naga"
+│       │                       └── wgpu v0.12.0 (*)
+│       ├── bevy_render feature "default" (*)
+│       ├── bevy_transform feature "default" (*)
+│       ├── bevy_window feature "default" (*)
+│       ├── bevy_input feature "default"
+│       │   └── bevy_input v0.6.0
+│       │       ├── bevy_app feature "default" (*)
+│       │       ├── bevy_ecs feature "default" (*)
+│       │       ├── bevy_utils feature "default" (*)
+│       │       └── bevy_math feature "default" (*)
+│       ├── bevy_scene feature "default"
+│       │   └── bevy_scene v0.6.0
+│       │       ├── bevy_app feature "default" (*)
+│       │       ├── bevy_ecs feature "default" (*)
+│       │       ├── bevy_reflect feature "bevy" (*)
+│       │       ├── bevy_reflect feature "default" (*)
+│       │       ├── uuid feature "default" (*)
+│       │       ├── uuid feature "serde" (*)
+│       │       ├── uuid feature "v4" (*)
+│       │       ├── bevy_utils feature "default" (*)
+│       │       ├── serde feature "default" (*)
+│       │       ├── serde feature "derive" (*)
+│       │       ├── thiserror feature "default" (*)
+│       │       ├── bevy_asset feature "default" (*)
+│       │       ├── anyhow feature "default" (*)
+│       │       ├── bevy_transform feature "default" (*)
+│       │       └── ron feature "default"
+│       │           └── ron v0.7.0
+│       │               ├── serde feature "default" (*)
+│       │               ├── serde feature "serde_derive" (*)
+│       │               ├── bitflags feature "default" (*)
+│       │               └── base64 feature "default"
+│       │                   ├── base64 v0.13.0
+│       │                   └── base64 feature "std"
+│       │                       └── base64 v0.13.0
+│       └── bevy_winit feature "default"
+│           └── bevy_winit v0.6.1
+│               ├── approx v0.5.1
+│               │   └── num-traits v0.2.14 (*)
+│               ├── winit v0.26.1
+│               │   ├── libc feature "default" (*)
+│               │   ├── instant feature "default" (*)
+│               │   ├── instant feature "wasm-bindgen" (*)
+│               │   ├── lazy_static feature "default" (*)
+│               │   ├── parking_lot feature "default" (*)
+│               │   ├── log feature "default" (*)
+│               │   ├── raw-window-handle feature "default" (*)
+│               │   ├── bitflags feature "default" (*)
+│               │   ├── mio feature "default"
+│               │   │   └── mio v0.8.2
+│               │   │       ├── libc feature "default" (*)
+│               │   │       └── log feature "default" (*)
+│               │   ├── mio feature "os-ext"
+│               │   │   ├── mio v0.8.2 (*)
+│               │   │   └── mio feature "os-poll"
+│               │   │       └── mio v0.8.2 (*)
+│               │   ├── percent-encoding feature "default"
+│               │   │   └── percent-encoding v2.1.0
+│               │   ├── smithay-client-toolkit feature "calloop"
+│               │   │   └── smithay-client-toolkit v0.15.3
+│               │   │       ├── lazy_static feature "default" (*)
+│               │   │       ├── log feature "default" (*)
+│               │   │       ├── bitflags feature "default" (*)
+│               │   │       ├── calloop feature "default"
+│               │   │       │   └── calloop v0.9.3
+│               │   │       │       ├── log feature "default" (*)
+│               │   │       │       └── nix feature "default"
+│               │   │       │           └── nix v0.22.3
+│               │   │       │               ├── cfg-if feature "default" (*)
+│               │   │       │               ├── libc feature "default" (*)
+│               │   │       │               ├── libc feature "extra_traits"
+│               │   │       │               │   └── libc v0.2.121
+│               │   │       │               ├── bitflags feature "default" (*)
+│               │   │       │               └── memoffset feature "default"
+│               │   │       │                   └── memoffset v0.6.5
+│               │   │       │                       [build-dependencies]
+│               │   │       │                       └── autocfg feature "default" (*)
+│               │   │       ├── nix feature "default" (*)
+│               │   │       ├── dlib feature "default"
+│               │   │       │   └── dlib v0.5.0
+│               │   │       │       └── libloading feature "default" (*)
+│               │   │       ├── memmap2 feature "default"
+│               │   │       │   └── memmap2 v0.3.1
+│               │   │       │       └── libc feature "default" (*)
+│               │   │       ├── wayland-client feature "default"
+│               │   │       │   └── wayland-client v0.29.4
+│               │   │       │       ├── libc feature "default" (*)
+│               │   │       │       ├── downcast-rs feature "default" (*)
+│               │   │       │       ├── bitflags feature "default" (*)
+│               │   │       │       ├── nix feature "default" (*)
+│               │   │       │       ├── scoped-tls feature "default"
+│               │   │       │       │   └── scoped-tls v1.0.0
+│               │   │       │       ├── wayland-commons feature "default"
+│               │   │       │       │   └── wayland-commons v0.29.4
+│               │   │       │       │       ├── once_cell feature "default" (*)
+│               │   │       │       │       ├── smallvec feature "default" (*)
+│               │   │       │       │       ├── nix feature "default" (*)
+│               │   │       │       │       └── wayland-sys feature "default"
+│               │   │       │       │           └── wayland-sys v0.29.4
+│               │   │       │       │               ├── lazy_static feature "default" (*)
+│               │   │       │       │               └── dlib feature "default" (*)
+│               │   │       │       │               [build-dependencies]
+│               │   │       │       │               └── pkg-config feature "default"
+│               │   │       │       │                   └── pkg-config v0.3.25
+│               │   │       │       └── wayland-sys feature "default" (*)
+│               │   │       │       [build-dependencies]
+│               │   │       │       └── wayland-scanner feature "default"
+│               │   │       │           └── wayland-scanner v0.29.4
+│               │   │       │               ├── proc-macro2 feature "default" (*)
+│               │   │       │               ├── quote feature "default" (*)
+│               │   │       │               └── xml-rs feature "default"
+│               │   │       │                   └── xml-rs v0.8.4
+│               │   │       ├── wayland-cursor feature "default"
+│               │   │       │   └── wayland-cursor v0.29.4
+│               │   │       │       ├── nix feature "default" (*)
+│               │   │       │       ├── wayland-client feature "default" (*)
+│               │   │       │       └── xcursor feature "default"
+│               │   │       │           └── xcursor v0.3.4
+│               │   │       │               └── nom feature "default"
+│               │   │       │                   ├── nom v7.1.1
+│               │   │       │                   │   ├── memchr v2.4.1
+│               │   │       │                   │   └── minimal-lexical v0.2.1
+│               │   │       │                   └── nom feature "std"
+│               │   │       │                       ├── nom v7.1.1 (*)
+│               │   │       │                       ├── memchr feature "std" (*)
+│               │   │       │                       ├── nom feature "alloc"
+│               │   │       │                       │   └── nom v7.1.1 (*)
+│               │   │       │                       └── minimal-lexical feature "std"
+│               │   │       │                           └── minimal-lexical v0.2.1
+│               │   │       ├── wayland-protocols feature "client"
+│               │   │       │   ├── wayland-protocols v0.29.4
+│               │   │       │   │   ├── bitflags feature "default" (*)
+│               │   │       │   │   ├── wayland-client feature "default" (*)
+│               │   │       │   │   └── wayland-commons feature "default" (*)
+│               │   │       │   │   [build-dependencies]
+│               │   │       │   │   └── wayland-scanner feature "default" (*)
+│               │   │       │   └── wayland-protocols feature "wayland-client"
+│               │   │       │       └── wayland-protocols v0.29.4 (*)
+│               │   │       ├── wayland-protocols feature "default"
+│               │   │       │   └── wayland-protocols v0.29.4 (*)
+│               │   │       └── wayland-protocols feature "unstable_protocols"
+│               │   │           └── wayland-protocols v0.29.4 (*)
+│               │   │       [build-dependencies]
+│               │   │       └── pkg-config feature "default" (*)
+│               │   ├── wayland-client feature "use_system_lib"
+│               │   │   ├── wayland-client v0.29.4 (*)
+│               │   │   ├── wayland-client feature "scoped-tls"
+│               │   │   │   └── wayland-client v0.29.4 (*)
+│               │   │   └── wayland-sys feature "client"
+│               │   │       ├── wayland-sys v0.29.4 (*)
+│               │   │       └── wayland-sys feature "dlib"
+│               │   │           └── wayland-sys v0.29.4 (*)
+│               │   ├── wayland-protocols feature "default" (*)
+│               │   ├── wayland-protocols feature "staging_protocols"
+│               │   │   └── wayland-protocols v0.29.4 (*)
+│               │   └── x11-dl feature "default"
+│               │       └── x11-dl v2.19.1
+│               │           ├── libc feature "default" (*)
+│               │           └── lazy_static feature "default" (*)
+│               │           [build-dependencies]
+│               │           └── pkg-config feature "default" (*)
+│               ├── bevy_app feature "default" (*)
+│               ├── bevy_ecs feature "default" (*)
+│               ├── bevy_utils feature "default" (*)
+│               ├── bevy_math feature "default" (*)
+│               ├── bevy_window feature "default" (*)
+│               ├── raw-window-handle feature "default" (*)
+│               └── bevy_input feature "default" (*)
+├── bevy_egui v0.12.1
+│   ├── bevy feature "bevy_core_pipeline"
+│   │   ├── bevy v0.6.1 (*)
+│   │   └── bevy_internal feature "bevy_core_pipeline"
+│   │       └── bevy_internal v0.6.0 (*)
+│   ├── bevy feature "bevy_render"
+│   │   ├── bevy v0.6.1 (*)
+│   │   └── bevy_internal feature "bevy_render"
+│   │       └── bevy_internal v0.6.0 (*)
+│   ├── bevy feature "bevy_winit"
+│   │   ├── bevy v0.6.1 (*)
+│   │   └── bevy_internal feature "bevy_winit"
+│   │       └── bevy_internal v0.6.0 (*)
+│   ├── bytemuck feature "default" (*)
+│   ├── bytemuck feature "derive"
+│   │   ├── bytemuck v1.9.1 (*)
+│   │   └── bytemuck feature "bytemuck_derive"
+│   │       └── bytemuck v1.9.1 (*)
+│   ├── wgpu feature "default" (*)
+│   ├── winit feature "x11"
+│   │   ├── winit v0.26.1 (*)
+│   │   ├── winit feature "mio"
+│   │   │   └── winit v0.26.1 (*)
+│   │   ├── winit feature "parking_lot"
+│   │   │   └── winit v0.26.1 (*)
+│   │   ├── winit feature "percent-encoding"
+│   │   │   └── winit v0.26.1 (*)
+│   │   └── winit feature "x11-dl"
+│   │       └── winit v0.26.1 (*)
+│   ├── egui feature "convert_bytemuck"
+│   │   ├── egui v0.17.0
+│   │   │   ├── epaint v0.17.0
+│   │   │   │   ├── ahash feature "std" (*)
+│   │   │   │   ├── bytemuck feature "default" (*)
+│   │   │   │   ├── bytemuck feature "derive" (*)
+│   │   │   │   ├── ab_glyph feature "default"
+│   │   │   │   │   ├── ab_glyph v0.2.15
+│   │   │   │   │   │   ├── ab_glyph_rasterizer v0.1.5
+│   │   │   │   │   │   └── owned_ttf_parser v0.15.0
+│   │   │   │   │   │       └── ttf-parser v0.15.0
+│   │   │   │   │   └── ab_glyph feature "std"
+│   │   │   │   │       ├── ab_glyph v0.2.15 (*)
+│   │   │   │   │       ├── ab_glyph_rasterizer feature "default"
+│   │   │   │   │       │   ├── ab_glyph_rasterizer v0.1.5
+│   │   │   │   │       │   └── ab_glyph_rasterizer feature "std"
+│   │   │   │   │       │       └── ab_glyph_rasterizer v0.1.5
+│   │   │   │   │       └── owned_ttf_parser feature "default"
+│   │   │   │   │           ├── owned_ttf_parser v0.15.0 (*)
+│   │   │   │   │           ├── owned_ttf_parser feature "apple-layout"
+│   │   │   │   │           │   ├── owned_ttf_parser v0.15.0 (*)
+│   │   │   │   │           │   └── ttf-parser feature "apple-layout"
+│   │   │   │   │           │       └── ttf-parser v0.15.0
+│   │   │   │   │           ├── owned_ttf_parser feature "glyph-names"
+│   │   │   │   │           │   ├── owned_ttf_parser v0.15.0 (*)
+│   │   │   │   │           │   └── ttf-parser feature "glyph-names"
+│   │   │   │   │           │       └── ttf-parser v0.15.0
+│   │   │   │   │           ├── owned_ttf_parser feature "opentype-layout"
+│   │   │   │   │           │   ├── owned_ttf_parser v0.15.0 (*)
+│   │   │   │   │           │   └── ttf-parser feature "opentype-layout"
+│   │   │   │   │           │       └── ttf-parser v0.15.0
+│   │   │   │   │           ├── owned_ttf_parser feature "std"
+│   │   │   │   │           │   ├── owned_ttf_parser v0.15.0 (*)
+│   │   │   │   │           │   └── ttf-parser feature "std"
+│   │   │   │   │           │       └── ttf-parser v0.15.0
+│   │   │   │   │           └── owned_ttf_parser feature "variable-fonts"
+│   │   │   │   │               ├── owned_ttf_parser v0.15.0 (*)
+│   │   │   │   │               └── ttf-parser feature "variable-fonts"
+│   │   │   │   │                   └── ttf-parser v0.15.0
+│   │   │   │   ├── atomic_refcell feature "default"
+│   │   │   │   │   └── atomic_refcell v0.1.8
+│   │   │   │   ├── emath feature "default"
+│   │   │   │   │   └── emath v0.17.0
+│   │   │   │   │       ├── bytemuck feature "default" (*)
+│   │   │   │   │       └── bytemuck feature "derive" (*)
+│   │   │   │   └── nohash-hasher feature "default"
+│   │   │   │       ├── nohash-hasher v0.2.0
+│   │   │   │       └── nohash-hasher feature "std"
+│   │   │   │           └── nohash-hasher v0.2.0
+│   │   │   ├── ahash feature "default" (*)
+│   │   │   └── nohash-hasher feature "default" (*)
+│   │   └── epaint feature "convert_bytemuck"
+│   │       ├── epaint v0.17.0 (*)
+│   │       ├── epaint feature "bytemuck"
+│   │       │   └── epaint v0.17.0 (*)
+│   │       └── emath feature "bytemuck"
+│   │           └── emath v0.17.0 (*)
+│   └── egui feature "default"
+│       ├── egui v0.17.0 (*)
+│       ├── egui feature "default_fonts"
+│       │   ├── egui v0.17.0 (*)
+│       │   └── epaint feature "default_fonts"
+│       │       └── epaint v0.17.0 (*)
+│       └── egui feature "single_threaded"
+│           ├── egui v0.17.0 (*)
+│           └── epaint feature "single_threaded"
+│               ├── epaint v0.17.0 (*)
+│               └── epaint feature "atomic_refcell"
+│                   └── epaint v0.17.0 (*)
+├── serde feature "default" (*)
+├── serde feature "derive" (*)
+├── thiserror feature "default" (*)
+├── log feature "default" (*)
+├── winit feature "default"
+│   ├── winit v0.26.1 (*)
+│   ├── winit feature "wayland"
+│   │   ├── winit v0.26.1 (*)
+│   │   ├── winit feature "sctk"
+│   │   │   └── winit v0.26.1 (*)
+│   │   ├── winit feature "wayland-client"
+│   │   │   └── winit v0.26.1 (*)
+│   │   └── winit feature "wayland-protocols"
+│   │       └── winit v0.26.1 (*)
+│   ├── winit feature "wayland-dlopen"
+│   │   ├── winit v0.26.1 (*)
+│   │   ├── winit feature "sctk" (*)
+│   │   ├── winit feature "wayland-client" (*)
+│   │   ├── smithay-client-toolkit feature "dlopen"
+│   │   │   ├── smithay-client-toolkit v0.15.3 (*)
+│   │   │   └── wayland-client feature "dlopen"
+│   │   │       ├── wayland-client v0.29.4 (*)
+│   │   │       ├── wayland-client feature "use_system_lib" (*)
+│   │   │       └── wayland-sys feature "dlopen"
+│   │   │           ├── wayland-sys v0.29.4 (*)
+│   │   │           ├── wayland-sys feature "dlib" (*)
+│   │   │           └── wayland-sys feature "lazy_static"
+│   │   │               └── wayland-sys v0.29.4 (*)
+│   │   └── wayland-client feature "dlopen" (*)
+│   └── winit feature "x11" (*)
+├── egui_extras feature "default"
+│   └── egui_extras v0.17.0
+│       ├── image v0.24.1
+│       │   ├── jpeg-decoder v0.2.4
+│       │   │   └── rayon feature "default"
+│       │   │       └── rayon v1.5.1
+│       │   │           ├── either v1.6.1
+│       │   │           ├── crossbeam-deque feature "default"
+│       │   │           │   ├── crossbeam-deque v0.8.1
+│       │   │           │   │   ├── crossbeam-epoch v0.9.8
+│       │   │           │   │   │   ├── crossbeam-utils v0.8.8 (*)
+│       │   │           │   │   │   ├── scopeguard v1.1.0
+│       │   │           │   │   │   ├── cfg-if feature "default" (*)
+│       │   │           │   │   │   ├── lazy_static feature "default" (*)
+│       │   │           │   │   │   └── memoffset feature "default" (*)
+│       │   │           │   │   │   [build-dependencies]
+│       │   │           │   │   │   └── autocfg feature "default" (*)
+│       │   │           │   │   ├── crossbeam-utils v0.8.8 (*)
+│       │   │           │   │   └── cfg-if feature "default" (*)
+│       │   │           │   └── crossbeam-deque feature "std"
+│       │   │           │       ├── crossbeam-deque v0.8.1 (*)
+│       │   │           │       ├── crossbeam-utils feature "std" (*)
+│       │   │           │       ├── crossbeam-deque feature "crossbeam-epoch"
+│       │   │           │       │   └── crossbeam-deque v0.8.1 (*)
+│       │   │           │       ├── crossbeam-deque feature "crossbeam-utils"
+│       │   │           │       │   └── crossbeam-deque v0.8.1 (*)
+│       │   │           │       └── crossbeam-epoch feature "std"
+│       │   │           │           ├── crossbeam-epoch v0.9.8 (*)
+│       │   │           │           ├── crossbeam-utils feature "std" (*)
+│       │   │           │           ├── crossbeam-epoch feature "alloc"
+│       │   │           │           │   └── crossbeam-epoch v0.9.8 (*)
+│       │   │           │           └── crossbeam-epoch feature "lazy_static"
+│       │   │           │               └── crossbeam-epoch v0.9.8 (*)
+│       │   │           └── rayon-core feature "default"
+│       │   │               └── rayon-core v1.9.1
+│       │   │                   ├── lazy_static feature "default" (*)
+│       │   │                   ├── num_cpus feature "default" (*)
+│       │   │                   ├── crossbeam-channel feature "default" (*)
+│       │   │                   ├── crossbeam-utils feature "default"
+│       │   │                   │   ├── crossbeam-utils v0.8.8 (*)
+│       │   │                   │   └── crossbeam-utils feature "std" (*)
+│       │   │                   └── crossbeam-deque feature "default" (*)
+│       │   │           [build-dependencies]
+│       │   │           └── autocfg feature "default" (*)
+│       │   ├── num-rational v0.4.0
+│       │   │   ├── num-integer feature "i128" (*)
+│       │   │   └── num-traits feature "i128" (*)
+│       │   │   [build-dependencies]
+│       │   │   └── autocfg feature "default" (*)
+│       │   ├── bytemuck feature "default" (*)
+│       │   ├── bytemuck feature "extern_crate_alloc"
+│       │   │   └── bytemuck v1.9.1 (*)
+│       │   ├── byteorder feature "default" (*)
+│       │   ├── color_quant feature "default" (*)
+│       │   ├── num-iter feature "default" (*)
+│       │   ├── num-traits feature "default" (*)
+│       │   ├── exr feature "default"
+│       │   │   └── exr v1.4.1
+│       │   │       ├── smallvec feature "default" (*)
+│       │   │       ├── bit_field feature "default"
+│       │   │       │   └── bit_field v0.10.1
+│       │   │       ├── deflate feature "default"
+│       │   │       │   └── deflate v1.0.0
+│       │   │       │       └── adler32 feature "default"
+│       │   │       │           ├── adler32 v1.2.0
+│       │   │       │           └── adler32 feature "std"
+│       │   │       │               └── adler32 v1.2.0
+│       │   │       ├── flume feature "default"
+│       │   │       │   ├── flume v0.10.12
+│       │   │       │   │   ├── futures-core v0.3.21
+│       │   │       │   │   ├── futures-sink v0.3.21
+│       │   │       │   │   ├── nanorand feature "default"
+│       │   │       │   │   │   ├── nanorand v0.7.0
+│       │   │       │   │   │   │   ├── getrandom feature "default" (*)
+│       │   │       │   │   │   │   ├── getrandom feature "js"
+│       │   │       │   │   │   │   │   ├── getrandom v0.2.6 (*)
+│       │   │       │   │   │   │   │   ├── getrandom feature "js-sys"
+│       │   │       │   │   │   │   │   │   └── getrandom v0.2.6 (*)
+│       │   │       │   │   │   │   │   └── getrandom feature "wasm-bindgen"
+│       │   │       │   │   │   │   │       └── getrandom v0.2.6 (*)
+│       │   │       │   │   │   │   └── getrandom feature "rdrand"
+│       │   │       │   │   │   │       └── getrandom v0.2.6 (*)
+│       │   │       │   │   │   ├── nanorand feature "chacha"
+│       │   │       │   │   │   │   └── nanorand v0.7.0 (*)
+│       │   │       │   │   │   ├── nanorand feature "pcg64"
+│       │   │       │   │   │   │   └── nanorand v0.7.0 (*)
+│       │   │       │   │   │   ├── nanorand feature "std"
+│       │   │       │   │   │   │   ├── nanorand v0.7.0 (*)
+│       │   │       │   │   │   │   └── nanorand feature "alloc"
+│       │   │       │   │   │   │       └── nanorand v0.7.0 (*)
+│       │   │       │   │   │   ├── nanorand feature "tls"
+│       │   │       │   │   │   │   ├── nanorand v0.7.0 (*)
+│       │   │       │   │   │   │   ├── nanorand feature "std" (*)
+│       │   │       │   │   │   │   └── nanorand feature "wyrand"
+│       │   │       │   │   │   │       └── nanorand v0.7.0 (*)
+│       │   │       │   │   │   └── nanorand feature "wyrand" (*)
+│       │   │       │   │   ├── nanorand feature "getrandom"
+│       │   │       │   │   │   └── nanorand v0.7.0 (*)
+│       │   │       │   │   ├── pin-project feature "default"
+│       │   │       │   │   │   └── pin-project v1.0.10
+│       │   │       │   │   │       └── pin-project-internal feature "default"
+│       │   │       │   │   │           └── pin-project-internal v1.0.10 (proc-macro)
+│       │   │       │   │   │               ├── proc-macro2 feature "default" (*)
+│       │   │       │   │   │               ├── quote feature "default" (*)
+│       │   │       │   │   │               ├── syn feature "default" (*)
+│       │   │       │   │   │               ├── syn feature "full" (*)
+│       │   │       │   │   │               └── syn feature "visit-mut" (*)
+│       │   │       │   │   ├── spin feature "default"
+│       │   │       │   │   │   ├── spin v0.9.2
+│       │   │       │   │   │   │   └── lock_api feature "default" (*)
+│       │   │       │   │   │   ├── spin feature "barrier"
+│       │   │       │   │   │   │   ├── spin v0.9.2 (*)
+│       │   │       │   │   │   │   └── spin feature "mutex"
+│       │   │       │   │   │   │       └── spin v0.9.2 (*)
+│       │   │       │   │   │   ├── spin feature "lazy"
+│       │   │       │   │   │   │   ├── spin v0.9.2 (*)
+│       │   │       │   │   │   │   └── spin feature "once"
+│       │   │       │   │   │   │       └── spin v0.9.2 (*)
+│       │   │       │   │   │   ├── spin feature "lock_api"
+│       │   │       │   │   │   │   ├── spin v0.9.2 (*)
+│       │   │       │   │   │   │   └── spin feature "lock_api_crate"
+│       │   │       │   │   │   │       └── spin v0.9.2 (*)
+│       │   │       │   │   │   ├── spin feature "mutex" (*)
+│       │   │       │   │   │   ├── spin feature "once" (*)
+│       │   │       │   │   │   ├── spin feature "rwlock"
+│       │   │       │   │   │   │   └── spin v0.9.2 (*)
+│       │   │       │   │   │   └── spin feature "spin_mutex"
+│       │   │       │   │   │       ├── spin v0.9.2 (*)
+│       │   │       │   │   │       └── spin feature "mutex" (*)
+│       │   │       │   │   └── spin feature "mutex" (*)
+│       │   │       │   ├── flume feature "async"
+│       │   │       │   │   ├── flume v0.10.12 (*)
+│       │   │       │   │   ├── flume feature "futures-core"
+│       │   │       │   │   │   └── flume v0.10.12 (*)
+│       │   │       │   │   ├── flume feature "futures-sink"
+│       │   │       │   │   │   └── flume v0.10.12 (*)
+│       │   │       │   │   └── flume feature "pin-project"
+│       │   │       │   │       └── flume v0.10.12 (*)
+│       │   │       │   ├── flume feature "eventual-fairness"
+│       │   │       │   │   ├── flume v0.10.12 (*)
+│       │   │       │   │   ├── flume feature "async" (*)
+│       │   │       │   │   └── flume feature "nanorand"
+│       │   │       │   │       └── flume v0.10.12 (*)
+│       │   │       │   └── flume feature "select"
+│       │   │       │       └── flume v0.10.12 (*)
+│       │   │       ├── half feature "default"
+│       │   │       │   └── half v1.8.2
+│       │   │       ├── inflate feature "default"
+│       │   │       │   └── inflate v0.4.5
+│       │   │       │       └── adler32 feature "default" (*)
+│       │   │       ├── lebe feature "default"
+│       │   │       │   └── lebe v0.5.1
+│       │   │       └── threadpool feature "default"
+│       │   │           └── threadpool v1.8.1
+│       │   │               └── num_cpus feature "default" (*)
+│       │   ├── gif feature "default"
+│       │   │   ├── gif v0.11.3
+│       │   │   │   ├── color_quant feature "default" (*)
+│       │   │   │   └── weezl feature "default"
+│       │   │   │       ├── weezl v0.1.5
+│       │   │   │       └── weezl feature "std"
+│       │   │   │           ├── weezl v0.1.5
+│       │   │   │           └── weezl feature "alloc"
+│       │   │   │               └── weezl v0.1.5
+│       │   │   ├── gif feature "raii_no_panic"
+│       │   │   │   └── gif v0.11.3 (*)
+│       │   │   └── gif feature "std"
+│       │   │       └── gif v0.11.3 (*)
+│       │   ├── png feature "default"
+│       │   │   └── png v0.17.5
+│       │   │       ├── bitflags feature "default" (*)
+│       │   │       ├── deflate feature "default" (*)
+│       │   │       ├── crc32fast feature "default"
+│       │   │       │   ├── crc32fast v1.3.2
+│       │   │       │   │   └── cfg-if feature "default" (*)
+│       │   │       │   └── crc32fast feature "std"
+│       │   │       │       └── crc32fast v1.3.2 (*)
+│       │   │       └── miniz_oxide feature "default"
+│       │   │           └── miniz_oxide v0.5.1
+│       │   │               └── adler v1.0.2
+│       │   ├── scoped_threadpool feature "default"
+│       │   │   └── scoped_threadpool v0.1.9
+│       │   └── tiff feature "default"
+│       │       └── tiff v0.7.1
+│       │           ├── jpeg-decoder v0.1.22
+│       │           ├── weezl feature "default" (*)
+│       │           └── flate2 feature "default"
+│       │               ├── flate2 v1.0.22
+│       │               │   ├── miniz_oxide v0.4.4
+│       │               │   │   └── adler v1.0.2
+│       │               │   │   [build-dependencies]
+│       │               │   │   └── autocfg feature "default" (*)
+│       │               │   ├── cfg-if feature "default" (*)
+│       │               │   ├── libc feature "default" (*)
+│       │               │   └── crc32fast feature "default" (*)
+│       │               └── flate2 feature "rust_backend"
+│       │                   ├── flate2 v1.0.22 (*)
+│       │                   └── flate2 feature "miniz_oxide"
+│       │                       └── flate2 v1.0.22 (*)
+│       ├── egui feature "single_threaded" (*)
+│       ├── parking_lot feature "default"
+│       │   └── parking_lot v0.12.0
+│       │       ├── lock_api feature "default" (*)
+│       │       └── parking_lot_core feature "default"
+│       │           └── parking_lot_core v0.9.2
+│       │               ├── cfg-if feature "default" (*)
+│       │               ├── libc feature "default" (*)
+│       │               └── smallvec feature "default" (*)
+│       ├── resvg feature "default"
+│       │   ├── resvg v0.22.0
+│       │   │   ├── usvg v0.22.0
+│       │   │   │   ├── fontdb v0.9.1
+│       │   │   │   │   ├── fontconfig-parser v0.5.0
+│       │   │   │   │   │   └── roxmltree feature "default"
+│       │   │   │   │   │       ├── roxmltree v0.14.1
+│       │   │   │   │   │       │   └── xmlparser feature "default"
+│       │   │   │   │   │       │       ├── xmlparser v0.13.3
+│       │   │   │   │   │       │       └── xmlparser feature "std"
+│       │   │   │   │   │       │           └── xmlparser v0.13.3
+│       │   │   │   │   │       └── roxmltree feature "std"
+│       │   │   │   │   │           └── roxmltree v0.14.1 (*)
+│       │   │   │   │   ├── log feature "default" (*)
+│       │   │   │   │   ├── ttf-parser feature "default"
+│       │   │   │   │   │   ├── ttf-parser v0.15.0
+│       │   │   │   │   │   ├── ttf-parser feature "apple-layout" (*)
+│       │   │   │   │   │   ├── ttf-parser feature "glyph-names" (*)
+│       │   │   │   │   │   ├── ttf-parser feature "opentype-layout" (*)
+│       │   │   │   │   │   ├── ttf-parser feature "std" (*)
+│       │   │   │   │   │   └── ttf-parser feature "variable-fonts" (*)
+│       │   │   │   │   └── memmap2 feature "default"
+│       │   │   │   │       └── memmap2 v0.5.3
+│       │   │   │   │           └── libc feature "default" (*)
+│       │   │   │   ├── log feature "default" (*)
+│       │   │   │   ├── base64 feature "default" (*)
+│       │   │   │   ├── ttf-parser feature "default" (*)
+│       │   │   │   ├── flate2 feature "rust_backend" (*)
+│       │   │   │   ├── pico-args feature "default"
+│       │   │   │   │   ├── pico-args v0.4.2
+│       │   │   │   │   └── pico-args feature "eq-separator"
+│       │   │   │   │       └── pico-args v0.4.2
+│       │   │   │   ├── float-cmp feature "std"
+│       │   │   │   │   └── float-cmp v0.9.0
+│       │   │   │   ├── svgtypes feature "default"
+│       │   │   │   │   └── svgtypes v0.8.0
+│       │   │   │   │       └── siphasher feature "default"
+│       │   │   │   │           ├── siphasher v0.3.10
+│       │   │   │   │           └── siphasher feature "std"
+│       │   │   │   │               └── siphasher v0.3.10
+│       │   │   │   ├── siphasher feature "default" (*)
+│       │   │   │   ├── data-url feature "default"
+│       │   │   │   │   └── data-url v0.1.1
+│       │   │   │   │       └── matches feature "default"
+│       │   │   │   │           └── matches v0.1.9
+│       │   │   │   ├── roxmltree feature "default" (*)
+│       │   │   │   ├── kurbo feature "default"
+│       │   │   │   │   └── kurbo v0.8.3
+│       │   │   │   │       └── arrayvec feature "default" (*)
+│       │   │   │   ├── rctree feature "default"
+│       │   │   │   │   └── rctree v0.4.0
+│       │   │   │   ├── rustybuzz feature "default"
+│       │   │   │   │   └── rustybuzz v0.5.0
+│       │   │   │   │       ├── bytemuck feature "default" (*)
+│       │   │   │   │       ├── bytemuck feature "extern_crate_alloc" (*)
+│       │   │   │   │       ├── smallvec feature "default" (*)
+│       │   │   │   │       ├── bitflags feature "default" (*)
+│       │   │   │   │       ├── ttf-parser feature "default" (*)
+│       │   │   │   │       ├── unicode-bidi-mirroring feature "default"
+│       │   │   │   │       │   └── unicode-bidi-mirroring v0.1.0
+│       │   │   │   │       ├── unicode-ccc feature "default"
+│       │   │   │   │       │   └── unicode-ccc v0.1.2
+│       │   │   │   │       ├── unicode-general-category feature "default"
+│       │   │   │   │       │   └── unicode-general-category v0.4.0
+│       │   │   │   │       └── unicode-script feature "default"
+│       │   │   │   │           └── unicode-script v0.5.4
+│       │   │   │   ├── unicode-script feature "default" (*)
+│       │   │   │   ├── simplecss feature "default"
+│       │   │   │   │   └── simplecss v0.2.1
+│       │   │   │   │       └── log feature "default" (*)
+│       │   │   │   ├── unicode-bidi feature "default"
+│       │   │   │   │   ├── unicode-bidi v0.3.7
+│       │   │   │   │   └── unicode-bidi feature "std"
+│       │   │   │   │       └── unicode-bidi v0.3.7
+│       │   │   │   ├── unicode-vo feature "default"
+│       │   │   │   │   └── unicode-vo v0.1.0
+│       │   │   │   └── xmlwriter feature "default"
+│       │   │   │       └── xmlwriter v0.1.0
+│       │   │   ├── log feature "default" (*)
+│       │   │   ├── gif feature "default" (*)
+│       │   │   ├── jpeg-decoder feature "platform_independent"
+│       │   │   │   └── jpeg-decoder v0.2.4 (*)
+│       │   │   ├── png feature "default" (*)
+│       │   │   ├── pico-args feature "default" (*)
+│       │   │   ├── rgb feature "default"
+│       │   │   │   ├── rgb v0.8.32
+│       │   │   │   │   └── bytemuck feature "default" (*)
+│       │   │   │   └── rgb feature "as-bytes"
+│       │   │   │       ├── rgb v0.8.32 (*)
+│       │   │   │       └── rgb feature "bytemuck"
+│       │   │   │           └── rgb v0.8.32 (*)
+│       │   │   ├── svgfilters feature "default"
+│       │   │   │   └── svgfilters v0.4.0
+│       │   │   │       ├── rgb feature "default" (*)
+│       │   │   │       └── float-cmp feature "std" (*)
+│       │   │   ├── svgtypes feature "default" (*)
+│       │   │   └── tiny-skia feature "default"
+│       │   │       ├── tiny-skia v0.6.3
+│       │   │       │   ├── arrayvec v0.5.2
+│       │   │       │   ├── cfg-if feature "default" (*)
+│       │   │       │   ├── bytemuck feature "default" (*)
+│       │   │       │   ├── png feature "default" (*)
+│       │   │       │   ├── arrayref feature "default"
+│       │   │       │   │   └── arrayref v0.3.6
+│       │   │       │   ├── safe_arch feature "bytemuck"
+│       │   │       │   │   └── safe_arch v0.5.2
+│       │   │       │   │       └── bytemuck feature "default" (*)
+│       │   │       │   └── safe_arch feature "default"
+│       │   │       │       └── safe_arch v0.5.2 (*)
+│       │   │       ├── tiny-skia feature "png-format"
+│       │   │       │   ├── tiny-skia v0.6.3 (*)
+│       │   │       │   ├── tiny-skia feature "png"
+│       │   │       │   │   └── tiny-skia v0.6.3 (*)
+│       │   │       │   └── tiny-skia feature "std"
+│       │   │       │       └── tiny-skia v0.6.3 (*)
+│       │   │       ├── tiny-skia feature "simd"
+│       │   │       │   ├── tiny-skia v0.6.3 (*)
+│       │   │       │   └── tiny-skia feature "safe_arch"
+│       │   │       │       └── tiny-skia v0.6.3 (*)
+│       │   │       └── tiny-skia feature "std" (*)
+│       │   ├── resvg feature "filter"
+│       │   │   ├── resvg v0.22.0 (*)
+│       │   │   ├── resvg feature "svgfilters"
+│       │   │   │   └── resvg v0.22.0 (*)
+│       │   │   └── usvg feature "filter"
+│       │   │       └── usvg v0.22.0 (*)
+│       │   ├── resvg feature "memmap-fonts"
+│       │   │   ├── resvg v0.22.0 (*)
+│       │   │   └── usvg feature "memmap-fonts"
+│       │   │       ├── usvg v0.22.0 (*)
+│       │   │       ├── usvg feature "fontdb"
+│       │   │       │   └── usvg v0.22.0 (*)
+│       │   │       └── fontdb feature "memmap"
+│       │   │           ├── fontdb v0.9.1 (*)
+│       │   │           ├── fontdb feature "fs"
+│       │   │           │   └── fontdb v0.9.1 (*)
+│       │   │           └── fontdb feature "memmap2"
+│       │   │               └── fontdb v0.9.1 (*)
+│       │   ├── resvg feature "system-fonts"
+│       │   │   ├── resvg v0.22.0 (*)
+│       │   │   └── usvg feature "system-fonts"
+│       │   │       ├── usvg v0.22.0 (*)
+│       │   │       ├── usvg feature "fontdb" (*)
+│       │   │       ├── fontdb feature "fontconfig"
+│       │   │       │   ├── fontdb v0.9.1 (*)
+│       │   │       │   ├── fontdb feature "fontconfig-parser"
+│       │   │       │   │   └── fontdb v0.9.1 (*)
+│       │   │       │   └── fontdb feature "fs" (*)
+│       │   │       └── fontdb feature "fs" (*)
+│       │   └── resvg feature "text"
+│       │       ├── resvg v0.22.0 (*)
+│       │       └── usvg feature "text"
+│       │           ├── usvg v0.22.0 (*)
+│       │           ├── usvg feature "fontdb" (*)
+│       │           ├── usvg feature "rustybuzz"
+│       │           │   └── usvg v0.22.0 (*)
+│       │           ├── usvg feature "ttf-parser"
+│       │           │   └── usvg v0.22.0 (*)
+│       │           ├── usvg feature "unicode-bidi"
+│       │           │   └── usvg v0.22.0 (*)
+│       │           ├── usvg feature "unicode-script"
+│       │           │   └── usvg v0.22.0 (*)
+│       │           └── usvg feature "unicode-vo"
+│       │               └── usvg v0.22.0 (*)
+│       ├── tiny-skia feature "default" (*)
+│       └── usvg feature "default"
+│           ├── usvg v0.22.0 (*)
+│           ├── usvg feature "export"
+│           │   ├── usvg v0.22.0 (*)
+│           │   └── usvg feature "xmlwriter"
+│           │       └── usvg v0.22.0 (*)
+│           ├── usvg feature "filter" (*)
+│           ├── usvg feature "memmap-fonts" (*)
+│           ├── usvg feature "system-fonts" (*)
+│           └── usvg feature "text" (*)
+├── egui_extras feature "image"
+│   └── egui_extras v0.17.0 (*)
+├── egui_extras feature "svg"
+│   ├── egui_extras v0.17.0 (*)
+│   ├── egui_extras feature "resvg"
+│   │   └── egui_extras v0.17.0 (*)
+│   ├── egui_extras feature "tiny-skia"
+│   │   └── egui_extras v0.17.0 (*)
+│   └── egui_extras feature "usvg"
+│       └── egui_extras v0.17.0 (*)
+├── image feature "default"
+│   ├── image v0.24.1 (*)
+│   ├── image feature "bmp"
+│   │   └── image v0.24.1 (*)
+│   ├── image feature "dds"
+│   │   ├── image v0.24.1 (*)
+│   │   └── image feature "dxt"
+│   │       └── image v0.24.1 (*)
+│   ├── image feature "dxt" (*)
+│   ├── image feature "farbfeld"
+│   │   └── image v0.24.1 (*)
+│   ├── image feature "gif"
+│   │   └── image v0.24.1 (*)
+│   ├── image feature "hdr"
+│   │   ├── image v0.24.1 (*)
+│   │   └── image feature "scoped_threadpool"
+│   │       └── image v0.24.1 (*)
+│   ├── image feature "ico"
+│   │   ├── image v0.24.1 (*)
+│   │   ├── image feature "bmp" (*)
+│   │   └── image feature "png"
+│   │       └── image v0.24.1 (*)
+│   ├── image feature "jpeg"
+│   │   └── image v0.24.1 (*)
+│   ├── image feature "jpeg_rayon"
+│   │   ├── image v0.24.1 (*)
+│   │   ├── image feature "jpeg" (*)
+│   │   └── jpeg-decoder feature "rayon"
+│   │       └── jpeg-decoder v0.2.4 (*)
+│   ├── image feature "openexr"
+│   │   ├── image v0.24.1 (*)
+│   │   └── image feature "exr"
+│   │       └── image v0.24.1 (*)
+│   ├── image feature "png" (*)
+│   ├── image feature "pnm"
+│   │   └── image v0.24.1 (*)
+│   ├── image feature "tga"
+│   │   └── image v0.24.1 (*)
+│   ├── image feature "tiff"
+│   │   └── image v0.24.1 (*)
+│   └── image feature "webp"
+│       └── image v0.24.1 (*)
+├── serde_json feature "default"
+│   ├── serde_json v1.0.79
+│   │   ├── serde v1.0.136 (*)
+│   │   ├── itoa feature "default"
+│   │   │   └── itoa v1.0.1
+│   │   └── ryu feature "default"
+│   │       └── ryu v1.0.9
+│   └── serde_json feature "std"
+│       ├── serde_json v1.0.79 (*)
+│       └── serde feature "std" (*)
+└── spin_sleep feature "default"
+    └── spin_sleep v1.1.1
